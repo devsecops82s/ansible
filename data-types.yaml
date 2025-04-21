@@ -4,7 +4,7 @@
   vars:   
     course_name: "devops with aws"
     trainer_name: "siva kumar reddy"
-    dyration: 120 
+    duration: 120 
     topics:
     - linux
     - shell
