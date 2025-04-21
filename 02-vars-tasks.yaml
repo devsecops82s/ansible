@@ -1,13 +1,13 @@
 - name: task variables
   hosts: local
   connection: local
-  vars:
+  vars: # play level varibles   ans global level variables
     Course: "devops"
     Duration: "120H"
     Trainer: "sivakumar reddy"
   tasks:
   - name: print the types of variables
-    vars:
+    vars:  # task level variables accessible only with in the task. task variable can override play level variable
       Course: "Ansible"
     ansible.builtin.debug:
       msg: "Course is {{Course}}, Duration is {{Duration}}, Trainer is {{Trainer}}"
