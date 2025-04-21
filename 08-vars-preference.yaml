@@ -5,8 +5,8 @@
     GREET: "PLAY"
   # vars_files:
   # - 03-vars.yaml
-  vars_prompt:
-  - name: GREET
+  # vars_prompt:
+  # - name: GREET
     prompt: enter the value
     private: false
   tasks:
@@ -20,7 +20,8 @@
 # 1. command line arguments variables
 # 2. task level variables
 # 3. files level variables
-# 4.
+# 4. prompt level varaibles
+# 5.
 
 
   
