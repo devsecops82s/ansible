@@ -3,8 +3,8 @@
   connection: local
   vars: # play level variable
     GREET: "PLAY"
-  vars_files:
-  - 03-vars.yaml
+  # vars_files:
+  # - 03-vars.yaml
   vars_prompt:
   - name: GREET
     prompt: enter the value
@@ -19,7 +19,8 @@
 
 # 1. command line arguments variables
 # 2. task level variables
-# 3.
+# 3. files level variables
+# 4.
 
 
   
