@@ -1,14 +1,14 @@
 - name: variables preference
   hosts: local
   connection: local
-  vars: # play level variable
-    GREET: "PLAY"
+  # vars: 
+  #   GREET: "PLAY"
   # vars_files:
   # - 03-vars.yaml
   # vars_prompt:
   # - name: GREET
-    prompt: enter the value
-    private: false
+  #   prompt: enter the value
+  #   private: false
   tasks:
   - name: print the variables from preference
     # vars: 
@@ -21,7 +21,8 @@
 # 2. task level variables
 # 3. files level variables
 # 4. prompt level varaibles
-# 5.
+# 5. play level varaibles
+# 6. Inventory level vraiables
 
 
   
