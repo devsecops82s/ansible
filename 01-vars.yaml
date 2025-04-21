@@ -1,0 +1,12 @@
+- name: print the variables type2
+  hosts: local
+  connection: local
+  vars:
+    Course: "devops"
+    Duration: "120H"
+    Trainer: "sivakumar reddy"
+  tasks:
+  - name: print the types of variables
+    ansible.builtin.debug:
+      msg: "Course is {{Course}}, Duration is {{Duration}}, Trainer is {{Trainer}}"
+    
