@@ -5,3 +5,10 @@
   - name: handle undefine variables
     ansible.builtin.debug:
       msg: "Hello {{ person | default('Srikanth')}}"
+
+
+  - name: convert string to list
+    vars:
+      movies: "Devara,HIT,Court,Hi Nana"
+    ansible.builtin.debug:
+      msg: "movies are {{ movies | split(',')}}"
