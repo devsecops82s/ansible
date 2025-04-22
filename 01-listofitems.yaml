@@ -7,8 +7,8 @@
       name: "{{ item }}"
       state: installed
     loop:
-    - { name: 'git' , state: 'present'}
-    - { name: 'mysql' , state: 'present'}
-    - { name: 'nginx' , state: 'absent'}
-    - { name: 'gcc' , state: 'absent'}
+    - { name: 'git', state: 'present'}
+    - { name: 'mysql', state: 'present'}
+    - { name: 'nginx', state: 'absent'}
+    - { name: 'gcc', state: 'absent'}
     
