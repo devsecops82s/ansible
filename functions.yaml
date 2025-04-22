@@ -6,9 +6,24 @@
     ansible.builtin.debug:
       msg: "Hello {{ person | default('Srikanth')}}"
 
-
+  # convert string to list
   - name: convert string to list
     vars:
       movies: "Devara,HIT,Court,Hi Nana"
     ansible.builtin.debug:
       msg: "movies are {{ movies | split(',')}}"
+
+
+  # convert map to list items
+
+  - name: convert map to list
+    vars:
+      course:
+        name: ansible
+        duration: 120hrs
+        trainer: sivakumar
+    ansible.builtin.debug:
+      msg: "Course Info {{ course | dict2items}}"
+
+
+  
